@@ -13,6 +13,9 @@ import java.util.HashMap;
 class RoomInventory {
 
     private HashMap<String, Integer> rooms;
+    public HashMap<String, Integer> getInventory() {
+        return rooms;
+    }
 
     public RoomInventory() {
         rooms = new HashMap<>();
@@ -20,6 +23,7 @@ class RoomInventory {
         rooms.put("Single Room", 10);
         rooms.put("Double Room", 5);
         rooms.put("Deluxe Room", 3);
+
     }
 
     public void displayRooms() {
